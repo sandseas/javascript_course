@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Statement Coin Toss</title>
+</head>
+<body>
+ <div id="output">If Statement Coin Toss</div>
+<script>
+
+
+ // ask a question
+// random number for random response
+// use switch to create some random responses
+// output the response back with the question
+
+var answer = "something went wrong";
+var output = document.getElementById("output");
+
+var question = prompt("Ask me anything");
+var randomNumber = Math.floor(Math.random()*6);
+
+switch (randomNumber){
+    case 0:
+    answer = "it will work out";
+    break;
+    case 1:
+    answer = "maybe maybe not";
+    break;
+    case 2:
+    answer = "probably not";
+    break;
+    case 3:
+    answer = "it is highly likely";
+    break;
+    default:
+    answer = "I don't know about that";
+    }
+    output.innerHTML = "You asked me "+question+"<br>I think  "+answer
+        
+
+    
+    
+</script>
+</body>
+</html>
